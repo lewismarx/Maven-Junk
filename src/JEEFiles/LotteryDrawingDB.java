@@ -2,6 +2,7 @@ package JEEFiles;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import JEEFiles.LocalMySQLCP;
 
@@ -39,7 +40,7 @@ public class LotteryDrawingDB extends JEEFiles.LotteryDrawing {
 		}
 	}	
 
-	protected int[] user_numbers() {
+	protected List user_numbers() {
 		// returns one row of user picks from database 
 		if (user_picks != null) {
 			try {
